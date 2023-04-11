@@ -1,15 +1,15 @@
-APPLICATION ?= ecc_key_gen_$(notdir $(patsubst %/,%,$(CURDIR)))
+APPLICATION ?= riot-os-examples-$(notdir $(patsubst %/,%,$(CURDIR)))
 
 
-
-BOARD ?= native
+BOARD ?= iotlab-m3
 RIOTBASE ?= $(CURDIR)/../../RIOT
 QUIET ?= 1
 
 
-
 # FEATURES_REQUIRED = periph_hwrng
 USEMODULE += random
+USEMODULE += hashes
+USEMODULE += xtimer
 
 USEPKG += micro-ecc
 

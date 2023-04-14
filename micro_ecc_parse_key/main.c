@@ -16,8 +16,6 @@
 
 #define TESTROUNDS  16
 
-typedef struct uECC_Curve_t* ECC_Curve;
-
 void print_key(uint8_t* key, size_t size) {
 	for(size_t i = 0; i < size; i++) {
 		if(i%5==0) 

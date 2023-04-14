@@ -1,8 +1,8 @@
-APPLICATION ?= mycode_$(notdir $(patsubst %/,%,$(CURDIR)))
+APPLICATION ?= $(notdir $(patsubst %/,%,$(CURDIR)))
 
 
 BOARD ?= native
-RIOTBASE ?= $(CURDIR)/../..
+RIOTBASE ?= $(CURDIR)/../RIOT
 QUIET ?= 1
 
 

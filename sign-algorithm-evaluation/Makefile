@@ -1,8 +1,8 @@
 APPLICATION ?= riot-os-examples-$(notdir $(patsubst %/,%,$(CURDIR)))
 
 
-BOARD ?= iotlab-m3
-RIOTBASE ?= $(CURDIR)/../../RIOT
+BOARD ?= native
+RIOTBASE ?= $(CURDIR)/../RIOT
 QUIET ?= 1
 
 

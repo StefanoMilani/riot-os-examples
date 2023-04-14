@@ -1,9 +1,9 @@
-APPLICATION ?= ecc_key_gen_$(notdir $(patsubst %/,%,$(CURDIR)))
+APPLICATION ?= $(notdir $(patsubst %/,%,$(CURDIR)))
 
 
 
 BOARD ?= native
-RIOTBASE ?= $(CURDIR)/../..
+RIOTBASE ?= $(CURDIR)/../RIOT
 QUIET ?= 1
 
 

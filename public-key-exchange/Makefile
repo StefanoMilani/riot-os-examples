@@ -5,7 +5,7 @@ APPLICATION ?= $(notdir $(patsubst %/,%,$(CURDIR)))
 BOARD ?= native
 
 # This has to be the absolute path to the RIOT base directory:
-RIOTBASE ?= $(CURDIR)/../..
+RIOTBASE ?= $(CURDIR)/../RIOT
 
 BOARD_INSUFFICIENT_MEMORY := airfy-beacon arduino-duemilanove arduino-mega2560 \
                              arduino-nano arduino-uno chronos mega-xplained \
@@ -25,7 +25,7 @@ USEMODULE += gnrc_ipv6_default
 USEMODULE += gnrc_udp
 USEMODULE += gnrc_sock_udp
 USEMODULE += posix_sockets
-USEMODULE += posix_time
+# USEMODULE += posix_time
 # Add routing protocol
 USEMODULE += gnrc_rpl
 USEMODULE += auto_init_gnrc_rpl
@@ -40,7 +40,6 @@ USEMODULE += prng_minstd
 
 # Add also the shell, some shell commands (can I remove it?)
 USEMODULE += shell
-USEMODULE += shell_commands
 USEMODULE += ps
 
 # AES module

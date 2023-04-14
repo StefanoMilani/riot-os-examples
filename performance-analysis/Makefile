@@ -5,7 +5,7 @@ APPLICATION ?= $(notdir $(patsubst %/,%,$(CURDIR)))
 BOARD ?= native
 
 # This has to be the absolute path to the RIOT base directory:
-RIOTBASE ?= $(CURDIR)/../..
+RIOTBASE ?= $(CURDIR)/../RIOT
 
 BOARD_INSUFFICIENT_MEMORY := airfy-beacon arduino-duemilanove arduino-mega2560 \
                              arduino-nano arduino-uno chronos mega-xplained \
@@ -22,7 +22,6 @@ USEMODULE += prng_minstd
 
 # Add also the shell, some shell commands (can I remove it?)
 USEMODULE += shell
-USEMODULE += shell_commands
 USEMODULE += ps
 
 USEMODULE += xtimer

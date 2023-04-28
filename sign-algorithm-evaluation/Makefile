@@ -1,7 +1,8 @@
-APPLICATION ?= riot-os-examples-$(notdir $(patsubst %/,%,$(CURDIR)))
-
-
 BOARD ?= native
+
+APPLICATION ?= $(notdir $(patsubst %/,%,$(CURDIR)))-$(BOARD)
+
+
 RIOTBASE ?= $(CURDIR)/../RIOT
 QUIET ?= 1
 
